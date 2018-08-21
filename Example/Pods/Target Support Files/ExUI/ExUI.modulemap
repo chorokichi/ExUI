@@ -1,0 +1,6 @@
+framework module ExUI {
+  umbrella header "ExUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
