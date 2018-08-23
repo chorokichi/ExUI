@@ -532,10 +532,7 @@
 			baseConfigurationReference = 64E35D8F34EFCE9892945FB7 /* Pods-ExUI_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = QXJ9PVGA47;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -555,10 +552,7 @@
 			baseConfigurationReference = F00FCCD987EB3B71038E894F /* Pods-ExUI_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = QXJ9PVGA47;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
