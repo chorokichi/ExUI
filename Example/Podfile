@@ -2,6 +2,7 @@ platform :ios, '11.0'
 use_frameworks!
 target 'ExUI_Example' do
   pod 'ExUI', :path => '../'
+  pod 'ExLog', :git => 'https://github.com/chorokichi/ExLog.git'
 
   target 'ExUI_Tests' do
     inherit! :search_paths
