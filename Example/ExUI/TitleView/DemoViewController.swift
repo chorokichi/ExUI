@@ -16,8 +16,8 @@ class DemoViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleView1.updateTitleViewText("change1")
-        titleView1.updateSubTitleViewText("change2")
+        titleView1.updateTitleViewText("change123456789012345678901234567890")
+        titleView1.updateSubTitleViewText("sub")
         titleView2.updateTitleViewText("change2")
     }
 

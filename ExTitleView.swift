@@ -34,8 +34,11 @@ import ExLog
     }
     
     /// サブタイトルビューのテキストをアップデートする
-    public func updateSubTitleViewText(_ text:String){
+    /// - 補足
+    ///     * textがnil or emptyのとき隠す
+    public func updateSubTitleViewText(_ text:String? = nil){
         self.subTitleView.text = text
+        self.subTitleView.isHidden = text?.isEmpty ?? true
     }
     
     /// ここに設定されたピクセル部分右左にパッディングが追加される。デフォルト値は10px。(leftAndRightPadding=10なら右に10px、左に10px設定される)
