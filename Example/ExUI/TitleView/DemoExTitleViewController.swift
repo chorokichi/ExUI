@@ -1,5 +1,5 @@
 //
-//  DemoViewController.swift
+//  DemoExTitleViewController.swift
 //  xcode-bot-specialist
 //
 //  Created by yuya on 2018/08/18.
@@ -9,7 +9,7 @@
 import UIKit
 import ExUI
 
-class DemoViewController: BaseViewController {
+class DemoExTitleViewController: BaseViewController {
 
     @IBOutlet weak var titleView1: ExTitleView!
     @IBOutlet weak var titleView2: ExTitleView!

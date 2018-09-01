@@ -13,8 +13,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8FEBF995BEC73E000DBA734F /* Pods_ExUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331D3EC3304F621451C7C078 /* Pods_ExUI_Example.framework */; };
-		FA53DBEE212EAF370015C08D /* DemoTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53DBEA212EAF370015C08D /* DemoTest.storyboard */; };
-		FA53DBEF212EAF370015C08D /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53DBEB212EAF370015C08D /* DemoViewController.swift */; };
+		FA53DBEE212EAF370015C08D /* DemoExTitleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53DBEA212EAF370015C08D /* DemoExTitleView.storyboard */; };
+		FA53DBEF212EAF370015C08D /* DemoExTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53DBEB212EAF370015C08D /* DemoExTitleViewController.swift */; };
 		FA53DBF1212EAF620015C08D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53DBF0212EAF610015C08D /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +46,8 @@
 		8312A4BDB73E650B4530052B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CDCA7F0141C91A5ED219FAB8 /* Pods-ExUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExUI_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExUI_Example/Pods-ExUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D5A7081662213362EAD9AD28 /* Pods-ExUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExUI_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExUI_Tests/Pods-ExUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA53DBEA212EAF370015C08D /* DemoTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoTest.storyboard; sourceTree = "<group>"; };
-		FA53DBEB212EAF370015C08D /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		FA53DBEA212EAF370015C08D /* DemoExTitleView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoExTitleView.storyboard; sourceTree = "<group>"; };
+		FA53DBEB212EAF370015C08D /* DemoExTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoExTitleViewController.swift; sourceTree = "<group>"; };
 		FA53DBF0212EAF610015C08D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,8 +164,8 @@
 		FA53DBE7212EAEFB0015C08D /* TitleView */ = {
 			isa = PBXGroup;
 			children = (
-				FA53DBEA212EAF370015C08D /* DemoTest.storyboard */,
-				FA53DBEB212EAF370015C08D /* DemoViewController.swift */,
+				FA53DBEA212EAF370015C08D /* DemoExTitleView.storyboard */,
+				FA53DBEB212EAF370015C08D /* DemoExTitleViewController.swift */,
 			);
 			path = TitleView;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				FA53DBEE212EAF370015C08D /* DemoTest.storyboard in Resources */,
+				FA53DBEE212EAF370015C08D /* DemoExTitleView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExUI_Tests/Pods-ExUI_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
@@ -290,8 +288,6 @@
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -308,15 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ExUI_Tests-checkManifestLockResult.txt",
 			);
@@ -330,15 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ExUI_Example-checkManifestLockResult.txt",
 			);
@@ -352,16 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExUI_Example/Pods-ExUI_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ExLog/ExLog.framework",
 				"${BUILT_PRODUCTS_DIR}/ExUI/ExUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExLog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExUI.framework",
@@ -380,7 +364,7 @@
 			files = (
 				FA53DBF1212EAF620015C08D /* BaseViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				FA53DBEF212EAF370015C08D /* DemoViewController.swift in Sources */,
+				FA53DBEF212EAF370015C08D /* DemoExTitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
