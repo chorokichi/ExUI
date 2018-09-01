@@ -26,9 +26,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ExUI/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ExUI' => ['ExUI/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'ExUI' => ['ExUI/Classes/**/*.xib']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

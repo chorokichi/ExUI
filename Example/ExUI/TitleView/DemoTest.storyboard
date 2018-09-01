@@ -17,58 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-oG-S23" customClass="TitleView" customModule="ExUI_Example" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-oG-S23" customClass="TitleView" customModule="ExUI">
                                 <rect key="frame" x="5" y="103" width="365" height="150"/>
                                 <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TitleView2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="yUf-HJ-pnu"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JW6-eo-B59" customClass="TitleView" customModule="ExUI_Example" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JW6-eo-B59" customClass="TitleView" customModule="ExUI">
                                 <rect key="frame" x="5" y="258" width="365" height="150"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.14117647059999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TitleView3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="G7f-7t-5q5"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="タイトルをStoryboard上で変更"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE5-RI-hef" customClass="TitleView" customModule="ExUI_Example" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE5-RI-hef" customClass="TitleView" customModule="ExUI">
                                 <rect key="frame" x="5" y="413" width="365" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TitleView4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Z2g-5e-wJd"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="背景変えても変えられないことの確認"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,7 +60,7 @@
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="戻る" id="Fjq-s1-bTS"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="undo" id="bfY-rE-gPr"/>
-                        <view key="titleView" contentMode="scaleToFill" id="BQU-HS-fc0" customClass="TitleView" customModule="ExUI_Example" customModuleProvider="target">
+                        <view key="titleView" contentMode="scaleToFill" id="BQU-HS-fc0" customClass="TitleView" customModule="ExUI">
                             <rect key="frame" x="80" y="34" width="215" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

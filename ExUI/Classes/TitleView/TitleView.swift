@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ExLog
+//import ExLog
 
 @IBDesignable
 class TitleView: UIView {
@@ -40,26 +40,29 @@ class TitleView: UIView {
     private func debugSelf(classFile: String = #file,
                            functionName: String = #function,
                            lineNumber: Int = #line) {
-        var msg = "id: \(String(describing: self.accessibilityIdentifier))\n"
-
-        msg += "\t" + "self: \(self)" + "\n"
-        msg += "\t" + "titleView.translatesAutoresizingMaskIntoConstraints: \(String(describing: titleView?.translatesAutoresizingMaskIntoConstraints))" + "\n"
-        msg += "\t" + "self.translatesAutoresizingMaskIntoConstraints: \(self.translatesAutoresizingMaskIntoConstraints)" + "\n"
-        msg += "\t" + "self.autoresizingMask: \(self.autoresizingMask)" + "\n"
-        msg += "\t" + "self.superview: \(String(describing: self.superview))" + "\n"
-        msg += "\t" + "self.superview.superview: \(String(describing: self.superview?.superview))" + "\n"
-
-        ExLog.log(msg, classFile: classFile, functionName: functionName, lineNumber: lineNumber)
+//        var msg = "id: \(String(describing: self.accessibilityIdentifier))\n"
+//
+//        msg += "\t" + "self: \(self)" + "\n"
+//        msg += "\t" + "titleView.translatesAutoresizingMaskIntoConstraints: \(String(describing: titleView?.translatesAutoresizingMaskIntoConstraints))" + "\n"
+//        msg += "\t" + "self.translatesAutoresizingMaskIntoConstraints: \(self.translatesAutoresizingMaskIntoConstraints)" + "\n"
+//        msg += "\t" + "self.autoresizingMask: \(self.autoresizingMask)" + "\n"
+//        msg += "\t" + "self.superview: \(String(describing: self.superview))" + "\n"
+//        msg += "\t" + "self.superview.superview: \(String(describing: self.superview?.superview))" + "\n"
+//
+//        ExLog.log(msg, classFile: classFile, functionName: functionName, lineNumber: lineNumber)
     }
 
     private func loadFromNib() {
         self.debugSelf()
         // Bundle.mainだとアプリを実行している時はうまくいくがstoryboard上で描画されないので動的に決めるようにしている
-        if let titleView = Bundle(for: type(of: self)).loadNibNamed("TitleView", owner: self, options: nil)?.first as? UIView {
+        let bundle = Bundle(for: type(of: self))
+//        ExLog.log("Loaded bundle(\(String(describing: bundle.bundleIdentifier)))")
+        if let titleView = bundle.loadNibNamed("TitleView", owner: self, options: nil)?.first as? UIView {
+//            ExLog.log("Loaded TitleView from nib file.")
             titleView.frame = self.bounds
             self.addSubview(titleView)
         } else {
-            ExLog.fatalError()
+//            ExLog.fatalError("Not found TitleView!!!")
         }
     }
 
@@ -108,6 +111,6 @@ class TitleView: UIView {
     private func loglifeCycly(classFile: String = #file,
                               functionName: String = #function,
                               lineNumber: Int = #line) {
-        ExLog.log("[Lyfe Cycle](id=\(String(describing: self.accessibilityIdentifier)))", classFile: classFile, functionName: functionName, lineNumber: lineNumber)
+//        ExLog.log("[Lyfe Cycle](id=\(String(describing: self.accessibilityIdentifier)))", classFile: classFile, functionName: functionName, lineNumber: lineNumber)
     }
 }

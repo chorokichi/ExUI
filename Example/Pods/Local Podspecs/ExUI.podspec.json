@@ -19,6 +19,11 @@
     "ios": "11.0"
   },
   "source_files": "ExUI/Classes/**/*",
+  "resource_bundles": {
+    "ExUI": [
+      "ExUI/Classes/**/*.xib"
+    ]
+  },
   "dependencies": {
     "ExLog": [
 
