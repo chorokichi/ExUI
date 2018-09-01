@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				FA53DBF0212EAF610015C08D /* BaseViewController.swift */,
-				FA53DBE7212EAEFB0015C08D /* TitleView */,
+				FA53DBE7212EAEFB0015C08D /* ExTitleView */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -161,13 +161,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FA53DBE7212EAEFB0015C08D /* TitleView */ = {
+		FA53DBE7212EAEFB0015C08D /* ExTitleView */ = {
 			isa = PBXGroup;
 			children = (
 				FA53DBEA212EAF370015C08D /* DemoExTitleView.storyboard */,
 				FA53DBEB212EAF370015C08D /* DemoExTitleViewController.swift */,
 			);
-			path = TitleView;
+			path = ExTitleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
