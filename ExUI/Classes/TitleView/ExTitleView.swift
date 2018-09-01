@@ -107,7 +107,7 @@ import ExLog
             return
         }
 
-        if (base.superview as? UINavigationBar) != nil {
+        if let navigationbar = base.superview as? UINavigationBar {
             self.translatesAutoresizingMaskIntoConstraints = true
             self.autoresizingMask = .flexibleWidth
             let frame = CGRect(
@@ -117,6 +117,11 @@ import ExLog
                 height: base.bounds.height)
             if !self.frame.equalTo(frame) {
                 self.frame = frame
+            }
+            
+            if let color = navigationbar.titleTextAttributes?[NSAttributedStringKey.foregroundColor] as? UIColor{
+                self.titleView.textColor = color
+                self.subTitleView.textColor = color
             }
         }
     }
