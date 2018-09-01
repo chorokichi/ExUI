@@ -11,23 +11,17 @@ import ExUI
 
 class DemoViewController: BaseViewController {
 
+    @IBOutlet weak var titleView1: ExTitleView!
+    @IBOutlet weak var titleView2: ExTitleView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        titleView1.updateTitleViewText("change1")
+        titleView1.updateSubTitleViewText("change2")
+        titleView2.updateTitleViewText("change2")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

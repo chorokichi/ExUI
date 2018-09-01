@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-oG-S23" customClass="TitleView" customModule="ExUI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-oG-S23" customClass="ExTitleView" customModule="ExUI">
                                 <rect key="frame" x="5" y="103" width="365" height="150"/>
                                 <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TitleView2"/>
@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="150" id="yUf-HJ-pnu"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JW6-eo-B59" customClass="TitleView" customModule="ExUI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JW6-eo-B59" customClass="ExTitleView" customModule="ExUI">
                                 <rect key="frame" x="5" y="258" width="365" height="150"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.14117647059999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TitleView3"/>
@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="height" constant="150" id="G7f-7t-5q5"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE5-RI-hef" customClass="TitleView" customModule="ExUI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE5-RI-hef" customClass="ExTitleView" customModule="ExUI">
                                 <rect key="frame" x="5" y="413" width="365" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TitleView4"/>
@@ -60,7 +60,7 @@
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="戻る" id="Fjq-s1-bTS"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="undo" id="bfY-rE-gPr"/>
-                        <view key="titleView" contentMode="scaleToFill" id="BQU-HS-fc0" customClass="TitleView" customModule="ExUI">
+                        <view key="titleView" contentMode="scaleToFill" id="BQU-HS-fc0" customClass="ExTitleView" customModule="ExUI">
                             <rect key="frame" x="80" y="34" width="215" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,11 +69,16 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="leftAndRightPadding">
                                     <integer key="value" value="80"/>
                                 </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="showLog" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="O0j-hV-9Qa"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="titleView1" destination="BQU-HS-fc0" id="nUp-Qz-Z20"/>
+                        <outlet property="titleView2" destination="GHg-oG-S23" id="Kc8-zt-qj3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oed-WZ-UI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
