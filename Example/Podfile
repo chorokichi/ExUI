@@ -7,8 +7,8 @@ target 'ExUI_Example' do
   target 'ExUI_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0.2'
+    pod 'Quick'
+    pod 'Nimble'
     pod 'FBSnapshotTestCase' , '~> 2.1.4', :inhibit_warnings => true
     pod 'Nimble-Snapshots' , '~> 6.3.0', :inhibit_warnings => true
   end
