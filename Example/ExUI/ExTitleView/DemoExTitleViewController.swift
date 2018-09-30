@@ -21,7 +21,7 @@ class DemoExTitleViewController: BaseViewController {
         titleView2.updateTitleViewText("change2")
         
         self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
     }
 
     override func didReceiveMemoryWarning() {

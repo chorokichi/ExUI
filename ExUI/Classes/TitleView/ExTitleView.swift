@@ -119,7 +119,7 @@ import ExLog
                 self.frame = frame
             }
             
-            if let color = navigationbar.titleTextAttributes?[NSAttributedStringKey.foregroundColor] as? UIColor{
+            if let color = navigationbar.titleTextAttributes?[NSAttributedString.Key.foregroundColor] as? UIColor{
                 self.titleView.textColor = color
                 self.subTitleView.textColor = color
             }
