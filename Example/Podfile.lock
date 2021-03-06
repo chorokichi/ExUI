@@ -1,6 +1,6 @@
 PODS:
-  - ExLog (0.4.0)
-  - ExUI (0.2.0):
+  - ExLog (0.4.1)
+  - ExUI (0.2.1):
     - ExLog
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
@@ -18,7 +18,7 @@ PODS:
   - Nimble-Snapshots/Core (9.1.0):
     - iOSSnapshotTestCase (~> 6.0)
     - Nimble
-  - Quick (3.0.0)
+  - Quick (3.1.2)
 
 DEPENDENCIES:
   - ExLog (from `https://github.com/chorokichi/ExLog.git`)
@@ -44,18 +44,18 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ExLog:
-    :commit: 05b489042be8f02d968ea6fb98ba205bd3bf4976
+    :commit: 41d3fc20af4d21f5300362314e1ae22d9792ef1a
     :git: https://github.com/chorokichi/ExLog.git
 
 SPEC CHECKSUMS:
-  ExLog: 51b9a2ae49ceb6f231c0377b983c4a1b362dd292
-  ExUI: 78495b13f896e46a1ea326d3c684ddc53407bb0b
+  ExLog: 540ec7a67b1051fa79e05ad677678f5fbe27fb33
+  ExUI: 9bdf406e33a044e3c806735a276209195d903fd4
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
   Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
   Nimble-Snapshots: 6605431525245f967ca9d558bb12a49da3d040e3
-  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  Quick: 60f0ea3b8e0cfc0df3259a5c06a238ad8b3c46e0
 
 PODFILE CHECKSUM: c73b36ebbbb4749059df4f7a2b7be384e7072822
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

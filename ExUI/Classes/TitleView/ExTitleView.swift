@@ -25,20 +25,32 @@ import ExLog
  */
 @IBDesignable open class ExTitleView: UIView {
 
-    @IBOutlet weak var titleView: UILabel!
-    @IBOutlet weak var subTitleView: UILabel!
+    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var subLabel: UILabel!
 
     /// タイトルビューのテキストをアップデートする
-    public func updateTitleViewText(_ text:String){
-        self.titleView.text = text
+    public func updateMainLabel(text:String){
+        self.mainLabel.text = text
+    }
+    
+    /// MailLabelのテキスト色を変更する
+    /// - Parameter textColor: 変更後の色
+    public func updateMainLabel(textColor: UIColor){
+        self.mainLabel.textColor = textColor
+    }
+    
+    /// SubLabelのテキスト色を変更する
+    /// - Parameter textColor: 変更後の色
+    public func updateSubLabel(textColor: UIColor){
+        self.subLabel.textColor = textColor
     }
     
     /// サブタイトルビューのテキストをアップデートする
     /// - 補足
     ///     * textがnil or emptyのとき隠す
-    public func updateSubTitleViewText(_ text:String? = nil){
-        self.subTitleView.text = text
-        self.subTitleView.isHidden = text?.isEmpty ?? true
+    public func updateSubLabel(text:String? = nil){
+        self.subLabel.text = text
+        self.subLabel.isHidden = text?.isEmpty ?? true
     }
     
     /// ここに設定されたピクセル部分右左にパッディングが追加される。デフォルト値は10px。(leftAndRightPadding=10なら右に10px、左に10px設定される)
@@ -120,8 +132,8 @@ import ExLog
             }
             
             if let color = navigationbar.titleTextAttributes?[NSAttributedString.Key.foregroundColor] as? UIColor{
-                self.titleView.textColor = color
-                self.subTitleView.textColor = color
+                self.mainLabel.textColor = color
+                self.subLabel.textColor = color
             }
         }
     }
@@ -140,7 +152,7 @@ extension ExTitleView{
         var msg = "id: \(String(describing: self.accessibilityIdentifier))\n"
         
         msg += "\t" + "self: \(self)" + "\n"
-        msg += "\t" + "titleView.translatesAutoresizingMaskIntoConstraints: \(String(describing: titleView?.translatesAutoresizingMaskIntoConstraints))" + "\n"
+        msg += "\t" + "mainLabel.translatesAutoresizingMaskIntoConstraints: \(String(describing: mainLabel?.translatesAutoresizingMaskIntoConstraints))" + "\n"
         msg += "\t" + "self.translatesAutoresizingMaskIntoConstraints: \(self.translatesAutoresizingMaskIntoConstraints)" + "\n"
         msg += "\t" + "self.autoresizingMask: \(self.autoresizingMask)" + "\n"
         msg += "\t" + "self.superview: \(String(describing: self.superview))" + "\n"

@@ -1,6 +1,6 @@
 {
   "name": "ExUI",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "summary": "カスタムされたUIを用意しているライブラリー.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Chorokichi/ExUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Chorokichi/ExUI.git",
-    "tag": "0.2.0"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "11.0"

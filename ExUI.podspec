@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ExUI'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'カスタムされたUIを用意しているライブラリー.'
 
   s.description      = <<-DESC

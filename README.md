@@ -20,6 +20,12 @@ it, simply add the following line to your Podfile:
 pod 'ExUI'
 ```
 
+## History
+
+### v0.2.1
+1. ExTitleViewのインスタンス変数名をわかりやすく変更(titleView => mainLabel, subTitleView => subLabel)。それに伴いテキスト変更用のメソッドも変更。
+2. mainLabelとsubLabelそれぞれのテキスト色を変更するためのメソッドを追加
+
 ## Author
 
 Jirokichi, kdy.developer@gmail.com
